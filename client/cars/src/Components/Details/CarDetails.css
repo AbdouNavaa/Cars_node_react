@@ -1,0 +1,213 @@
+:root {
+  --primaryColor: #7a63f1;
+  --secondaryColor: #ebe8fc;
+  --textColor: #a3a3a3;
+  --greyColor: #f4f4f4;
+  --whiteColor: #f5f4fa;
+  --blackColor: #434344;
+  --main-color: #8e44ad;
+  --red: #e74c3c;
+  --orange: #f39c12;
+  --light-color: #888;
+  --light-bg: #eee;
+  --black: #2c3e50;
+  --white: #fff;
+  --primary: blue;
+}
+
+/* details */
+.details .car-details .heading {
+  padding-top: 2em;
+  font-size: 2rem;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--primaryColor);
+}
+.details .car-details .row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  background-color: var(--white);
+  padding: 10px 1rem;
+  height: 60%;
+  width: 98%;
+  justify-content: center;
+  margin-left: 10px;
+}
+.details .car-details .row .column {
+  padding: 1rem 1rem 40rem;
+}
+.details .car-details .row .column .save-car {
+  margin-bottom: 1.5rem;
+}
+.details .car-details .row .column .save-car button {
+  border-radius: 0.5rem;
+  background-color: var(--light-bg);
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+}
+.details .car-details .row .column .save-car button i {
+  font-size: 2rem;
+  color: var(--black);
+  margin-right: 0.8rem;
+}
+.details .car-details .row .column .save-car button span {
+  font-size: 1.8rem;
+  color: var(--light-color);
+}
+.details .car-details .row .column .save-car button:hover {
+  background-color: var(--black);
+}
+.details .car-details .row .column .save-car button:hover i {
+  color: var(--white);
+}
+.details .car-details .row .column .save-car button:hover span {
+  color: var(--white);
+}
+.details .car-details .row .column .thumb {
+  position: relative;
+}
+.details .car-details .row .column .thumb span {
+  font-size: 1.8rem;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 0.5rem;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding: 0.5rem 1.5rem;
+}
+.details .car-details .row .column .thumb {
+  /* h4{
+      top: .5rem;
+      left: .4rem;
+      right: .4rem;
+      height: 16rem;
+
+  } */
+  /* img{
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  border-radius: .5rem;
+  } */
+}
+.details .car-details .row .column .thumb img {
+  height: 17rem;
+  width: 40rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1rem;
+}
+.details .car-details .row .column .thumb i {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.4rem;
+  right: 0.4rem;
+  height: 16rem;
+  border-radius: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  color: #fff;
+  display: none;
+}
+.details .car-details .row .column .thumb:hover i {
+  display: flex;
+}
+.details .car-details .row .column .tutor {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.details .car-details .row .column .tutor img {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.details .car-details .row .column .tutor h3 {
+  font-size: 1.3rem;
+  color: var(--black);
+  margin-bottom: 0.2rem;
+}
+.details .car-details .row .column .tutor span {
+  font-size: medium;
+  color: var(--light-color);
+}
+.details .car-details .row .column .details h3 {
+  font-size: 1.5rem;
+  color: var(--black);
+  text-transform: capitalize;
+}
+.details .car-details .row .column .details .flex {
+  gap: 2rem;
+}
+.details .car-details .row .column .details .flex .grid p {
+  padding: 0.8rem 0;
+  line-height: 1;
+  font-size: 1rem;
+  color: var(--light-color);
+}
+.details .car-details .row .column .details .flex .grid button {
+  justify-content: space-between;
+  margin-bottom: 20px;
+  border: none;
+}
+.details .car-details .row .column .details .flex .grid button .primaryBtn {
+  padding: 10px 5px;
+  border: none;
+}
+.details .car-details .row .column .details .flex .grid button .secondaryBtn {
+  margin-left: 20%;
+  padding: 10px 35px;
+  font-size: 14px;
+}
+.details .car-details .row .column .details .flex .grid button .secondaryBtn .far {
+  padding: 0 8px;
+  font-size: 14px;
+}
+.details .same_cars .heading {
+  font-size: 2rem;
+  text-transform: capitalize;
+  text-align: center;
+  color: var(--primaryColor);
+}
+.details .same_cars .box-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  justify-content: center;
+}
+.details .same_cars .box-container .box {
+  background-color: var(--white);
+  border-radius: 0.5rem;
+  padding: 2rem;
+  position: relative;
+}
+.details .same_cars .box-container .box:hover {
+  transform: translateY(1px);
+  padding: 1rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background: var(--light-bg);
+}
+.details .same_cars .box-container .box img {
+  height: 20rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0.5rem;
+}
+.details .same_cars .box-container .box h3 {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  color: var(--textColor);
+  text-decoration: none;
+}
+.details .same_cars .box-container .box:hover h3 {
+  color: var(--black);
+}/*# sourceMappingURL=CarDetails.css.map */

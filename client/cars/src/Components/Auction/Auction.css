@@ -1,0 +1,143 @@
+:root {
+  --primaryColor: #7a63f1;
+  --secondaryColor: #ebe8fc;
+  --textColor: #a3a3a3;
+  --greyColor: #f4f4f4;
+  --whiteColor: #f5f4fa;
+  --blackColor: #434344;
+  --white: #fff;
+}
+
+.auction .secContsiner .secHeading {
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+.auction .secContsiner .secHeading .navBtns {
+  gap: 0.5rem;
+}
+.auction .secContsiner .secHeading .navBtns .icon {
+  padding: 3px 5px;
+  background: var(--secondaryColor);
+  border-radius: 3px;
+  font-size: 30px;
+  cursor: pointer;
+}
+.auction .secContsiner .secHeading .navBtns .icon:hover {
+  background: var(--white);
+  color: var(--whiteColor);
+}
+.auction .secContsiner .carContainer {
+  gap: 2rem;
+}
+.auction .secContsiner .carContainer .singleCar {
+  transition: 0.3s ease-in-out;
+  text-align: left;
+  padding: 1rem;
+  border-radius: 10px;
+}
+.auction .secContsiner .carContainer .singleCar .imgDiv {
+  height: 200px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 5px solid transparent;
+}
+.auction .secContsiner .carContainer .singleCar .imgDiv img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.auction .secContsiner .carContainer .singleCar .carTitle {
+  color: var(--blackColor);
+  font-size: 15px;
+  padding-top: 10px;
+}
+.auction .secContsiner .carContainer .singleCar .miles {
+  color: var(--blackColor);
+  opacity: 0.7;
+  font-size: 14px;
+}
+.auction .secContsiner .carContainer .singleCar .AWD {
+  padding: 1rem 0;
+  color: var(--blackColor);
+  font-weight: 600;
+  font-size: 15px;
+}
+.auction .secContsiner .carContainer .singleCar .price_buyBtn {
+  gap: 1rem;
+}
+.auction .secContsiner .carContainer .singleCar .price_buyBtn span {
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  font-weight: 600;
+}
+.auction .secContsiner .carContainer .singleCar .price_buyBtn .price {
+  background: var(--secondaryColor);
+  color: var(--primaryColor);
+}
+.auction .secContsiner .carContainer .singleCar .price_buyBtn .buyBtn {
+  background: var(--primaryColor);
+  color: var(--whiteColor);
+  cursor: pointer;
+}
+.auction .secContsiner .carContainer .singleCar .price_buyBtn .buyBtn:hover {
+  background: var(--secondaryColor);
+  color: var(--textColor);
+}
+.auction .secContsiner .carContainer .singleCar:hover {
+  transform: translateY(-7px);
+  padding: 1rem;
+  background: var(--greyColor);
+}
+.auction .secContsiner .carContainer .singleCar:hover .price_buyBtn span {
+  border: 1px solid var(--primaryColor);
+}
+.auction .secContsiner .carContainer .singleCarActive {
+  padding: 1rem;
+  background: var(--secondaryColor);
+}
+.auction .secContsiner .carContainer .singleCarActive .price_buyBtn span {
+  border: 1px solid var(--primaryColor);
+}
+
+@media screen and (min-width: 520px) {
+  .auction .secContsiner .secHeading {
+    margin-top: 1rem;
+  }
+  .auction .secContsiner .secHeading .secTitle {
+    font-size: 23px;
+  }
+  .auction .secContsiner .secHeading .navBtns {
+    gap: 0.5rem;
+  }
+  .auction .secContsiner .secHeading .navBtns .icon {
+    font-size: 40px;
+  }
+  .auction .secContsiner .carContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .auction .secContsiner .carContainer .singleCar .carTitle {
+    font-size: 18px;
+  }
+  .auction .secContsiner .carContainer .singleCar .miles, .auction .secContsiner .carContainer .singleCar .AWD {
+    font-size: 16px;
+  }
+  .auction .secContsiner .carContainer .singleCar .price_buyBtn {
+    font-weight: 600;
+  }
+}
+@media screen and (min-width: 940px) {
+  .auction .secContsiner .secHeading {
+    margin-top: 1rem;
+  }
+  .auction .secContsiner .secHeading .secTitle {
+    font-size: 28px;
+  }
+  .auction .secContsiner .secHeading .navBtns {
+    gap: 1rem;
+  }
+  .auction .secContsiner .carContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}/*# sourceMappingURL=Auction.css.map */
